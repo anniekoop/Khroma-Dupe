@@ -1,0 +1,110 @@
+* {
+    font-family: 'Helvetica Neue';
+    box-sizing: border-box;
+}
+
+body {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 0.5rem;
+
+    .nav-right {
+        display: none;
+        gap: 0.75rem;
+    }
+
+    .level-key {
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        gap: 0;
+        font-weight: 500;
+        margin: 0;
+        color: #555;
+        padding-bottom: 1px;
+
+        .levels {
+            font-weight: 400;
+            padding-left: 0;
+            list-style-type: none;
+            gap: 0.75rem;
+            display: flex;
+            margin-top: 0.375rem;
+            margin-bottom: 1.125rem;
+        }
+    }
+}
+
+.cards {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+    grid-auto-rows: minmax(100px, auto);
+    position: relative;
+}
+
+.card {
+    height: 22rem;
+    position: relative;
+    padding: 1.5rem 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1.75px solid black;
+}
+
+.card:hover {
+    transform: scale(1.04);
+    cursor: pointer;
+    box-shadow: 0.5rem 0.5rem 0 black;
+}
+
+.bg-color-name {
+    font-size: 1.75rem;
+    font-weight: 700;
+    font-family: 'Playfair Display';
+    margin: 0;
+}
+
+.text-color-name {
+    margin-top: 0.5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.sentence {
+    font-size: 14px;
+    line-height: 135%;
+    font-weight: 400;
+}
+
+.logo {
+    font-size: 1.75rem;
+    font-family: 'Playfair Display';
+    font-weight: 600;
+    letter-spacing: 0.25px;
+    color: #666;
+}
+
+.clone {
+    font-style: italic;
+    font-family: 'Playfair Display';
+    font-size: 1.8rem;
+    letter-spacing: 0.25px;
+    font-weight: 700;
+    color: #1677ff;
+}
